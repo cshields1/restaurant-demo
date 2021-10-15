@@ -1,4 +1,4 @@
-import loadPage from "./initialLoad";
+import homepage from "./homepage";
 
 loadPage();
 
