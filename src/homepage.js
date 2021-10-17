@@ -8,12 +8,12 @@ const loadHomepage = () => {
   display.append(heroImage);
 
   const headline = document.createElement("h1");
-  headline.textContent = "Dale's Peanut Butter Pancake";
+  headline.textContent = "Chug Hut";
   display.append(headline);
 
   const copy = document.createElement("p");
   copy.textContent =
-    "Chef Dale takes care to ensure that the pancakes on your plate are full of buttery, flavorful peanuts sourced from Orange County's finest farmers.";
+    "Chef Dale is hard at work making sure that the pizzas, pancakes, and pies at Chug Hut are sourced from Orange County's finest vendors.";
   display.append(copy);
 };
 
