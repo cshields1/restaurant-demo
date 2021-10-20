@@ -5,6 +5,10 @@ import loadContact from "./contact";
 const loadNavbar = () => {
   const display = document.querySelector("#content");
 
+  while (display.firstChild) {
+    display.firstChild.remove();
+  }
+
   const buttonContainer = document.createElement("div");
   buttonContainer.id = "btn-container";
 

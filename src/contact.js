@@ -5,24 +5,23 @@ const loadContact = () => {
 
   const display = document.querySelector("#content");
 
-  while (display.firstChild) {
-    display.firstChild.remove();
-  }
-
   const contactImage = new Image();
-  contactImage.src = "";
+  contactImage.src = "../assets/dog-arcade.jpeg";
 
-  const contactContainer = document.createElement("section");
-  contactContainer.id = "contact-div";
+  const address = document.createElement('div');
+  address.innerHTML = "<h2>Address</h2><p>1406 S. Fairview St.<br>Santa Ana, CA 92704</p>";
 
-  const contactInfo = document.createElement("p");
-  contactInfo.classList.add("contact-info");
-  contactInfo.innerHTML =
-    "<h2>Address</h2><p>1406 S. Fairview St.<br>Santa Ana, CA 92704</p><h2>Phone Number</h2><p>(714) 435-7857</p><h2>Email</h2><p><a href='mailto:dale@chughut.com'>dale@chughut.com</a></p>";
+  const phone = document.createElement('div');
+  phone.innerHTML = "<h2>Phone Number</h2><p>(714) 435-7857</p>";
 
-  contactContainer.append(contactInfo);
+  const email = document.createElement('div');
+  email.innerHTML = "<h2>Email</h2><p><a href='mailto:dale@chughut.com'>dale@chughut.com</a></p>";
 
-  display.append(contactImage, contactContainer);
+  const contactInfo = document.createElement("div");
+  contactInfo.id = "contact-info";
+  contactInfo.append(address,phone,email)
+
+  display.append(contactImage, contactInfo);
 };
 
 export default loadContact;
