@@ -17,7 +17,7 @@ const loadHomepage = () => {
     "Chef Dale is hard at work making sure that the pizzas, pancakes, and pies at Chug Hut are sourced from Orange County's finest vendors.";
 
     const signature = document.createElement('span')
-    signature.innerHTML = "Made by Craig Shields for <a href='www.theodinproject.com'>The Odin Project</a>."
+    signature.textContent = "Made by Craig Shields for The Odin Project."
 
   display.append(heroImage, headline, copy, signature);
 };
