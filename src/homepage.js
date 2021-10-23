@@ -1,6 +1,7 @@
 import "./style.css";
 import loadNavbar from "./navbar";
 import DaleDesk from "../assets/dale-desk.jpeg";
+import addSignature from "./signature";
 
 const loadHomepage = () => {
   loadNavbar();
@@ -17,10 +18,9 @@ const loadHomepage = () => {
   copy.textContent =
     "Chef Dale is hard at work making sure that the pizzas, pancakes, and pies at Chug Hut are sourced from Orange County's finest vendors.";
 
-  const signature = document.createElement('span')
-  signature.textContent = "Made by Craig Shields for The Odin Project."
+  display.append(heroImage, headline, copy);
 
-  display.append(heroImage, headline, copy, signature);
+  addSignature();
 };
 
 export default loadHomepage;

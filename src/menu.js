@@ -3,6 +3,7 @@ import PeanutButterBaconBites from '../assets/peanut-butter-bacon-bites.jpeg';
 import TunaAppleSalad from '../assets/tuna-apple-salad.jpeg';
 import CheesyChickenPizza from '../assets/cheesy-chicken-pizza.jpeg';
 import PeanutButterBananaIceCream from '../assets/peanut-butter-banana-ice-cream.jpeg';
+import addSignature from "./signature";
 
 const loadMenu = () => {
   loadNavbar();
@@ -48,12 +49,11 @@ const loadMenu = () => {
   dessertInfo.textContent = "The perfect topper on any party. Ask about the birthday cup!";
   dessert.append(dessertName, dessertImage, dessertInfo);
 
-  const signature = document.createElement('span')
-  signature.innerHTML = "Made by Craig Shields for <a href='www.theodinproject.com'>The Odin Project</a>."
-
-  menu.append(snack,salad,pizza,dessert,signature);
+  menu.append(snack,salad,pizza,dessert);
 
   display.append(menu);
+
+  addSignature();
 };
 
 export default loadMenu;
