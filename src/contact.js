@@ -1,4 +1,5 @@
 import loadNavbar from "./navbar";
+import DogArcade from "../assets/dog-arcade.jpeg";
 
 const loadContact = () => {
   loadNavbar();
@@ -6,7 +7,7 @@ const loadContact = () => {
   const display = document.querySelector("#content");
 
   const contactImage = new Image();
-  contactImage.src = "../assets/dog-arcade.jpeg";
+  contactImage.src = DogArcade;
 
   const address = document.createElement('div');
   address.innerHTML = "<h2>Address</h2><p>1406 S. Fairview St.<br>Santa Ana, CA 92704</p>";
