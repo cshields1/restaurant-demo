@@ -21,7 +21,10 @@ const loadContact = () => {
   contactInfo.id = "contact-info";
   contactInfo.append(address,phone,email)
 
-  display.append(contactImage, contactInfo);
+  const signature = document.createElement('span')
+  signature.innerHTML = "Made by Craig Shields for <a href='www.theodinproject.com'>The Odin Project</a>."
+
+  display.append(contactImage, contactInfo, signature);
 };
 
 export default loadContact;
